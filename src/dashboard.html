@@ -1,340 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/output.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" />
+    <!-- Cdn Flowbite -->
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+<!-- SideBar -->
+<aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 pt-14 shadow-2xl" aria-label="Sidebar">
+   <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 22 21">
+                  <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
+                  <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
+               </svg>
+               <span class="ms-3">Dashboard</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 18">
+                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
+            </a>
+         </li>
+         <li>
+         <li>
+            <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100  dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                  <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 18 21">
+                     <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+                  </svg>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">E-commerce</span>
+                  <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+            <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                  <li>
+                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700">Billing</a>
+                  </li>
+                  <li>
+                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700">Invoice</a>
+                  </li>
+            </ul>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 18 18">
+                  <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Pesanan</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+            </a>
+         </li>
+         
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 18 20">
+                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="none" viewBox="0 0 18 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</aside>
     <!-- Navbar -->
-    <header
-      class="fixed w-full flex justify-between px-35 py-6 bg-white shadow-xl z-40 top-0 left-0"
-    >
+    <header class="fixed w-full flex justify-between bg-white text-black px-10 py-5 shadow-2xl z-40">
       <!-- Kiri -->
       <div class="font-bold">
-        <h1 class="text-[#FFC1CC]">BreakFood</h1>
+        <h1 class="text-pink-400 text-lg">BreakFood</h1>
       </div>
       <!-- Kanan -->
-      <div class="md:flex gap-5 hidden font-bold">
-        <a href="" class="hover:underline">Home</a>
-        <a href="" class="hover:underline">Tentang Kami</a>
-        <a href="" class="hover:underline">Hubungi Kami</a>
-        <a href="" class="hover:underline  hover:text-blue-500 text-blue-700">Sign In</a>
+      <div class="md:flex gap-7 hidden">
+        <p class="text-black text-xl"><i class="fi fi-rs-store-buyer"></i></p>
+        <a href="" class="font-semibold">Masuk</a>
+        <a href="" class="font-semibold">Daftar</a>
       </div>
     </header>
-    <!-- Navbar end -->
-
-    <!-- Section 1 -->
-    <section
-      id="section1"
-      class="flex pt-24 md:pt-0 justify-between h-screen items-center px-10 z-50"
-    >
-      <div class="w-full ml-25 mt-15">
-        <div class="text-[58px]">
-          <p class="text-xl font-semibold">Konsumen</p>
-          <p class="font-bold">Pesan Makanan</p>
-          <p class="font-bold mt-[-20px]">Favoritmu Sekarang,</p>
-          <p class="font-bold mt-[-20px]">Biar BreakFood yang</p>
-          <p class="font-bold mt-[-20px]">antar</p>
+    <!-- Image -->
+     <div class="pl-64">
+    <div class="bg-[url(img/bgmenu.jpg)] p-6 h-90 bg-no-repeat bg-cover flex items-center bg-gray-400 bg-blend-multiply">
+      <div class="flex flex-col">
+        <div class="text-4xl font-bold text-gray-400">
+          Break Food
         </div>
-        <div class="flex mt-9 gap-2">
-          <button
-            class="mt-5 bg-pink-600 text-white font-semibold px-7 py-4 rounded-full hover:bg-pink-700 cursor-pointer"
-          >
-            <a href="#">Pesan Sekarang</a>
-          </button>
-          <button
-            class="mt-5 bg-pink-100 font-semibold px-7 py-4 rounded-full hover:bg-pink-200 cursor-pointer"
-          >
-            <a href="">Pesan Sekarang</a>
-          </button>
-        </div>
+        <p class="text-white font-semibold text-lg">Pengen makan tapi males keluar Rumah? BreakFood Solusinya</p>
+        <p class="text-white font-semibold text-lg">BreakFood ?"Lezatnya Cuma Sekali Klik!"</p>
       </div>
-      <div class="md: mt-3">
-        <img
-          src="/src/img/Premium Photo _ 3d render small convenience store with trees on light pink background.jpg"
-          alt=""
-          class="ml-10 w-[1630px] h-[680px] mr-5"
-        />
-      </div>
-    </section>
-    <!-- section 1 end -->
-
-    <hr class="mx-35 h-5 mt-15 mb-10" />
-
-    <!-- section 2 -->
-
-    <section id="contoh 1">
-      <div class="flex justify-between mt-10">
-        <div class="text-xl mx-15 ml-35 flex w-full">Gambaran utama</div>
-        <div class="text-[32px] mr-36 w-full font-semibold">
-          <h1>
-            <p class=" ">Setiap hari jutaan pengguna</p>
-            <p class="mt-[-10px]">GrabFood mencari dan memesan</p>
-            <p class="mt-[-10px]">menu-menu penggugah selera dari</p>
-            <p class="mt-[-10px]">berbagai restoran pilihan. Hanya</p>
-            <p class="mt-[-10px]">dengan beberapa klik, hidangan lezat</p>
-            <p class="mt-[-10px]">menunggu Anda!</p>
-          </h1>
-        </div>
-      </div>
-    </section>
-    <!-- section 2 end -->
-
-    <hr class="mx-35 h-5 mt-20" />
-
-    <!-- section 3 -->
-    <section id="contoh 2">
-      <div class="ml-35 mt-8 text-xl">
-        <p>Kenapa harus menggunakan BreakFood?</p>
-      </div>
-      <div class="flex justify-between mx-35 mt-15">
-        <div class="text-[40px] font-bold">
-          <div class="flex">
-            <p class="text-[40px] mt-5">1</p>
-            <div class="ml-12">
-              <p class=" ">Temukan berbagai</p>
-              <p class="mt-[-13px]">hidangan favoritmu</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-lg mr-18">
-          <p>
-            Mau makan di luar atau menggunakan pesan-antar, bahkan ambil <br />
-            sendiri untuk menghemat waktu? GrabFood membuat semuanya <br />
-            lebih praktis.
-          </p>
-        </div>
-      </div>
-      <hr class="mx-35 h-5 mt-15" />
-      <div class="flex justify-between mx-35 mt-15">
-        <div class="text-[40px] font-bold">
-          <div class="flex">
-            <p class="text-[40px] mt-5">2</p>
-            <div class="ml-12">
-              <p class=" ">Semua keinginan pasti</p>
-              <p class="mt-[-13px]">terpenuhi</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-lg mr-17">
-          <p>
-            Makan bareng keluarga atau teman-teman dengan selera yang
-            <br />berbeda? GrabFood memiliki jutaan pilihan, mulai dari jajanan
-            kaki <br />
-            lima sampai restoran Michelin.
-          </p>
-        </div>
-      </div>
-      <hr class="mx-35 h-5 mt-15" />
-      <div class="flex justify-between mx-35 mt-15">
-        <div class="text-[40px] font-bold">
-          <div class="flex">
-            <p class="text-[40px] mt-5">3</p>
-            <div class="ml-12">
-              <p class=" ">Harga terjangkau,</p>
-              <p class="mt-[-13px]">menggugah selera</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-lg mr-17">
-          <p>
-            Layanan Pengantaran Hemat, GrabUnlimited, dan Dine Out Deals <br />
-            adalah cara kami memanjakan Anda supaya selalu bisa merasakan <br />
-            kelezatan favorit dengan harga hemat.
-          </p>
-        </div>
-      </div>
-
-      <div class="md: mt-28 ml-10 pb-23">
-        <img
-          src="/src/img/top-view-food-crisis-concept-with-plate.jpg"
-          alt=""
-          class="ml-25 w-[1240px] h-[480px] justify-center items-center rounded-sm"
-        />
-      </div>
-    </section>
-    <!-- section 3 end -->
-
-    <!-- section 4  -->
-    <section id="contoh 4" class="bg-gray-100 pb-23">
-      <div class="ml-35 mt-8 pt-25 text-xl">
-        <p>Cara memesan</p>
-
-        <div class="text-[40px] mt-18">
-          <p class="font-bold">Pengiriman instan</p>
-          <div class="flex">
-            <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
-              <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
-              </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
-            </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
-          </div>
-        </div>
-      </div>
-
-      <hr class="mx-35 h-5 mt-20" />
-
-      <div class="ml-35 mt-8 text-xl">
-        <div class="text-[40px] mt-14">
-          <p class="font-bold">Pengiriman Terjadwal</p>
-          <div class="flex">
-            <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
-              <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
-              </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
-            </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
-          </div>
-        </div>
-      </div>
-
-      <hr class="mx-35 h-5 mt-20" />
-
-      <div class="ml-35 mt-8 text-xl">
-        <div class="text-[40px] mt-14">
-          <p class="font-bold">Ambil sendiri</p>
-          <div class="flex">
-            <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
-              <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
-              </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
-            </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
-          </div>
-        </div>
-      </div>
-
-      <hr class="mx-35 h-5 mt-20" />
-
-      <div class="ml-35 mt-8 text-xl">
-        <div class="text-[40px] mt-14">
-          <p class="font-bold">Dine Out Deals</p>
-          <div class="flex">
-            <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
-              <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
-              </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
-            </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section 4 end -->
-
-    <!-- section 5 -->
-    <section id="section5" class="bg-[#FFB2B2] pb-40">
-      <div class="ml-35 pt-25 text-xl text-white">
-        <div>
-          <p class="text-[40px] text-white font-bold">Komitmen Keamanan kami</p>
-
-          <div class="flex grid-cols-3 mt-15 ml-[-80px]">
-            <div class="border-l-2 px-2 py-10 mx-20">
-              <div class="mx-5">
-                <p class="font-semibold mb-3 mt-[-40px]">
-                  Kontrol siapa yang dapat melihat <br />informasi anda
-                </p>
-                <p>
-                  Aplikasi dan sistem backend kami menggunakan kerangka kerja
-                  keamanan terbaik di kelasnya yang menjaga akun pengguna, data
-                  transaksi, dompet elektronik, dan informasi pribadi lainnya.
-                </p>
-              </div>
-            </div>
-
-            <div class="border-l-2 px-2 py-10 ml-[-75px]">
-              <div class="mx-5">
-                <p class="font-semibold mb-3 mt-[-40px]">
-                  Kontrol siapa yang dapat melihat <br />informasi anda
-                </p>
-                <p>
-                  Aplikasi dan sistem backend kami menggunakan kerangka kerja
-                  keamanan terbaik di kelasnya yang menjaga akun pengguna, data
-                  transaksi, dompet elektronik, dan informasi pribadi lainnya.
-                </p>
-              </div>
-            </div>
-            <div class="border-l-2 px-2 py-10 mr-20">
-              <div class="mx-5">
-                <p class="font-semibold mb-3 mt-[-40px]">
-                  Kontrol siapa yang dapat melihat <br />informasi anda
-                </p>
-                <p>
-                  Aplikasi dan sistem backend kami menggunakan kerangka kerja
-                  keamanan terbaik di kelasnya yang menjaga akun pengguna, data
-                  transaksi, dompet elektronik, dan informasi pribadi lainnya.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-6 bg-[#dfa9ab]">
-      <p class="ml-29  text-white font-semibold text-xl">
-        Info lebih lanjut Tentang Komitmen Keamanan kami
-      </p>
-    </section>
-    <!-- section 5 end -->
-
-    <!-- section 6 -->
-
-    <section id="section6" class="pb-">
-      <div class="ml-35 mt-8 text-xl"></div>
-    </section>
-    <!-- section 6 end -->
-
-    <!-- footer -->
-
-   
-
-
-
-
-
-
-
-<footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">BreakFood</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
+    </div>  
     </div>
-</footer>
-
-
-
-
-    <!-- cdn flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  </body>
+    <!-- Section 1 -->
+  <section class="py-7 pl-64">
+    <div class="w-full mt-10 p-5 md:mt-0">
+      <h1 class="text-pink-400 font-semibold text-3xl">Makanan</span></h1>
+    </div>
+    <div class="grid gap-4 px-5">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan.jpg" alt="Bihun Saust iram">
+            <p class="font-semibold text-xl py-3">Bihun Saus Tiram</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan2.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Jamur Saus Tiram</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan3.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Mie Kuetiaw</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan4.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Mie Bangladesh</p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Section2 -->
+  <section class="py-7 pl-64">
+    <div class="grid gap-4 px-5">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan5.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Ayam Cingcang Lada Hitam</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan6.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Sate Mang Nono</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan8.avif" alt="">
+            <p class="font-semibold text-xl py-3">Mie Bangladesh</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/makanan7.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Mie Kuetiaw Basah</p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Section 3 -->
+<section class="py-7 pl-64">
+    <div class="w-full mt-10 p-5 md:mt-0">
+      <h1 class="text-pink-400 font-semibold text-3xl">Minuman</span></h1>
+    </div>
+    <div class="grid gap-4 px-5">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/minuman1.jpg" alt="Bihun Saus tiram">
+            <p class="font-semibold text-xl py-3">Cofee GodDay</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/minuman2.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Orange Juice</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/minuman3.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Ice Cream</p>
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/minuman4.jpg" alt="">
+            <p class="font-semibold text-xl py-3">Ice DungDung</p>
+        </div>
+    </div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
 </html>
