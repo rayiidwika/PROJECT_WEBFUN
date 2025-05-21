@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BreakFood.com</title>
     <link rel="stylesheet" href="/src/output.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -11,6 +11,7 @@
     />
   </head>
   <body class="">
+
     <!-- Navbar -->
     <header
       class="fixed w-full flex justify-between px-35 py-6 bg-white shadow-xl z-40 top-0 left-0"
@@ -21,10 +22,14 @@
       </div>
       <!-- Kanan -->
       <div class="md:flex gap-5 hidden font-bold">
-        <a href="" class="hover:underline">Home</a>
-        <a href="" class="hover:underline">Tentang Kami</a>
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#tentangKami" class="hover:underline">Tentang Kami</a>
         <a href="" class="hover:underline">Hubungi Kami</a>
-        <a href="" class="hover:underline  hover:text-blue-500 text-blue-700">Sign In</a>
+        <a
+          href="login.html"
+          class="hover:underline hover:text-blue-500 text-blue-700"
+          >Sign In</a
+        >
       </div>
     </header>
     <!-- Navbar end -->
@@ -42,17 +47,23 @@
           <p class="font-bold mt-[-20px]">Biar BreakFood yang</p>
           <p class="font-bold mt-[-20px]">antar</p>
         </div>
+        <!-- eror -->
         <div class="flex mt-9 gap-2">
-          <button
-            class="mt-5 bg-pink-600 text-white font-semibold px-7 py-4 rounded-full hover:bg-pink-700 cursor-pointer"
-          >
-            <a href="#">Pesan Sekarang</a>
-          </button>
-          <button
-            class="mt-5 bg-pink-100 font-semibold px-7 py-4 rounded-full hover:bg-pink-200 cursor-pointer"
-          >
-            <a href="">Pesan Sekarang</a>
-          </button>
+          <a href="dashboard.html">
+            <button
+              class="mt-5 bg-pink-600 text-white font-semibold px-7 py-4 rounded-full hover:bg-pink-700 cursor-pointer"
+            >
+              <p>Pesan Sekarang</p>
+            </button>
+          </a>
+
+          <a href="login.html">
+            <button
+              class="mt-5 bg-pink-100 font-semibold px-7 py-4 rounded-full hover:bg-pink-200 cursor-pointer"
+            >
+              <p>Get Started</p>
+            </button>
+          </a>
         </div>
       </div>
       <div class="md: mt-3">
@@ -89,7 +100,7 @@
     <hr class="mx-35 h-5 mt-20" />
 
     <!-- section 3 -->
-    <section id="contoh 2">
+    <section id="tentangKami">
       <div class="ml-35 mt-8 text-xl">
         <p>Kenapa harus menggunakan BreakFood?</p>
       </div>
@@ -166,7 +177,7 @@
       <div class="ml-35 mt-8 pt-25 text-xl">
         <p>Cara memesan</p>
 
-        <div class="text-[40px] mt-18">
+        <div class="text-[40px] mt-17">
           <p class="font-bold">Pengiriman instan</p>
           <div class="flex">
             <div class="text-[21px] mt-4">
@@ -260,24 +271,22 @@
             <div class="border-l-2 px-2 py-10 ml-[-75px]">
               <div class="mx-5">
                 <p class="font-semibold mb-3 mt-[-40px]">
-                  Kontrol siapa yang dapat melihat <br />informasi anda
+                  Setiap transaksi dilindungi
                 </p>
                 <p>
-                  Aplikasi dan sistem backend kami menggunakan kerangka kerja
-                  keamanan terbaik di kelasnya yang menjaga akun pengguna, data
-                  transaksi, dompet elektronik, dan informasi pribadi lainnya.
+                  Fitur aplikasi kami terus diperkuat dan dilindungi oleh
+                  teknologi terbaru dan proses ketat kami, sehingga pengguna
+                  dapat melakukan apa yang mereka butuhkan dengan tenang.
                 </p>
               </div>
             </div>
             <div class="border-l-2 px-2 py-10 mr-20">
               <div class="mx-5">
-                <p class="font-semibold mb-3 mt-[-40px]">
-                  Kontrol siapa yang dapat melihat <br />informasi anda
-                </p>
+                <p class="font-semibold mb-3 mt-[-40px]">Aman untuk semua</p>
                 <p>
-                  Aplikasi dan sistem backend kami menggunakan kerangka kerja
-                  keamanan terbaik di kelasnya yang menjaga akun pengguna, data
-                  transaksi, dompet elektronik, dan informasi pribadi lainnya.
+                  Tidak ada konsumen yang harus merasa tidak aman saat
+                  menggunakan layanan kami. Grab selalu siaga memastikan
+                  pengalaman yang lancar dan aman.
                 </p>
               </div>
             </div>
@@ -287,52 +296,46 @@
     </section>
 
     <section class="p-6 bg-[#dfa9ab]">
-      <p class="ml-29  text-white font-semibold text-xl">
+      <p class="ml-29 text-white font-semibold text-xl">
         Info lebih lanjut Tentang Komitmen Keamanan kami
       </p>
     </section>
     <!-- section 5 end -->
 
     <!-- section 6 -->
-
     <section id="section6" class="pb-">
       <div class="ml-35 mt-8 text-xl"></div>
     </section>
     <!-- section 6 end -->
 
     <!-- footer -->
-
-   
-
-
-
-
-
-
-
-<footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">BreakFood</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2025
+          <a href="https://flowbite.com/" class="hover:underline">BreakFood</a>.
+          All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
             <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
-    </div>
-</footer>
-
-
-
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <!-- cdn flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
