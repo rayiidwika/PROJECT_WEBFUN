@@ -25,7 +25,7 @@
   </style>
 <body>
 <!-- SideBar -->
-<aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 pt-14 shadow-2xl" aria-label="Sidebar">
+<aside id="sidebar-multi-level-sidebar" class=" fixed md:block hidden top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 pt-14 shadow-2xl" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
       <ul class="space-y-2 font-medium">
          <li>
@@ -91,7 +91,7 @@
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="home.html" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="none" viewBox="0 0 18 16">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
                </svg>
@@ -130,10 +130,11 @@
         <h1 class="text-pink-400 text-lg">BreakFood</h1>
       </div>
       <!-- Kanan -->
-      <div class="md:flex gap-7 hidden">
-        <p class="text-black text-xl"><i class="fi fi-rs-store-buyer"></i></p>
-        <a href="" class="font-semibold">Masuk</a>
-        <a href="" class="font-semibold">Daftar</a>
+      <div class="md:flex gap-10 hidden">
+        <a href="" class="text-black text-xl"><i class="fi fi-rs-store-buyer"></i></a>
+        <a href="" class="text-black text-xl  "><i class="fi fi-rs-user"></i></a>
+        <a href="" class="text-xl"><i class="fi fi-rr-settings"></i></a>
+
       </div>
     </header>
     <!-- Image -->
@@ -147,6 +148,7 @@
          <p class="text-white font-semibold text-lg">BreakFood ?"Lezatnya Cuma Sekali Klik!"</p>
          </div>
       </div>   -->
+      <!-- Content Bg Scrol -->
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[650px]">
@@ -175,7 +177,6 @@
             <img src="img/makanan1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
-<<<<<<< HEAD
     <!-- Slider indicators -->
     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
@@ -204,95 +205,451 @@
     </button>
 </div>
 
+</div>
+<!-- List Menu -->
+ <div class="pl-64">
+ <div id="scrollContainer"
+      class="cursor-pointer active:cursor-pointer overflow-x-auto whitespace-nowrap px-4 scrollbar-hide scroll-smooth select-none">
+      <div class="flex gap-4">
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+            <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Semua Produk</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+              <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Makanan</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Minuman</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Mie Ayam</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Pangsit</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Ayam Goreng</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Ayam Bakar</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">Nasi Goreng</p>
+        </div>
+        <div
+          class="mt-9 border w-[170px] h-[45px] bg-gray-400 shadow-sm text-center rounded-md flex items-center pl-3 gap-2 shrink-0">
+          <div class="bg-pink-900 w-7 h-7 rounded-md flex items-center justify-center">
+             <i class="fi fi-rr-checklist-task-budget text-white"></i>
+          </div>
+          <p class="font-semibold text-white">All you can't eat</p>
+        </div>
       </div>
-=======
-
-
->>>>>>> 7e4c7426448b1a4035dfd6dbf3cb9a41a8b6d35a
-    <!-- Section 1 -->
-  <section class="py-7 pl-64">
-    <div class="w-full mt-10 p-5 md:mt-0">
-      <h1 class="text-pink-400 font-semibold text-3xl">Makanan</span></h1>
     </div>
-    <div class="grid gap-4 px-5">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan.jpg" alt="Bihun Saust iram">
-            <p class="font-semibold text-xl py-3">Bihun Saus Tiram</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan2.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Jamur Saus Tiram</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan3.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Mie Kuetiaw</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan4.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Mie Bangladesh</p>
-        </div>
     </div>
-</div>
-</section>
+
+<!-- Content 1 -->
+ <div class="pl-64 pt-6">
+ <div id="scrolldiv" 
+        class="cursor-pointer grid grid-cols-1 md:grid-cols-4 whitespace-nowrap px-4 scrollbar-hide scroll-smooth mt-5 ">
+        <!-- Item 1 -->
+        <div class="shadow-2xl bg-white w-[220px] h-[330px] ml- mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan1.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i> </div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Mie Bangladesh</h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 17.000</span> <span class="text-sm text-gray-400"><del>Rp
+                    13.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-bag text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class=" relative [220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan4.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div></div>
+          <div class="absolute ml-[180px] mb-[350px] "></div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Mie Kuwetiaw </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp15.000 </span> <span class="text-sm text-gray-400"><del>Rp
+                    20.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan6.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <div class="text-semibold text-wrap">Sate Madura</div>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp25.000 </span> <span class="text-sm text-gray-400"><del>Rp
+                    30.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan12.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Paket Nasi Oncom </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 17.500</span> <span class="text-sm text-gray-400"><del>Rp
+                    20.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Content 2 -->
+ <div class="pl-64 pt-6">
+ <div id="scrolldiv" 
+        class="cursor-pointer grid grid-cols-1 md:grid-cols-4 whitespace-nowrap px-4 scrollbar-hide scroll-smooth mt-5 ">
+        <!-- Item 1 -->
+        <div class="shadow-2xl bg-white w-[220px] h-[330px] ml- mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/minuman1.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i> </div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Capucino Expresino</h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 20.000</span> <span class="text-sm text-gray-400"><del>Rp
+                    18.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-bag text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class=" relative [220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/minuman2.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div></div>
+          <div class="absolute ml-[180px] mb-[350px] "></div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Orange Juice </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp15.000 </span> <span class="text-sm text-gray-400"><del>Rp
+                    20.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/minuman3.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <div class="text-semibold text-wrap">Pop Ice Coklat</div>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp11.000</span> <span class="text-sm text-gray-400"><del>Rp
+                    15.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/minuman5.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">PJuice Jeruk </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 13.500</span> <span class="text-sm text-gray-400"><del>Rp
+                    20.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+<!-- Content 3 -->
+ <div class="pl-64">
+ <div id="scrolldiv" 
+        class="cursor-pointer grid grid-cols-1 md:grid-cols-4 whitespace-nowrap px-4 scrollbar-hide scroll-smooth mt-5">
+        <!-- Item 1 -->
+        <div class="shadow-2xl bg-white w-[220px] h-[330px] ml- mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Salad Aduk</h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 17.000</span> <span class="text-sm text-gray-400"><del>Rp
+                    13.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-bag text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class=" relative [220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan2.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div></div>
+          <div class="absolute ml-[180px] mb-[350px] "></div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Jamur Lada Hitam </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp19.000 </span> <span class="text-sm text-gray-400"><del>Rp
+                    23.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan13.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <div class="text-semibold text-wrap">Baso Tusuk</div>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp15.000 </span> <span class="text-sm text-gray-400"><del>Rp
+                    21.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class=" shadow-2xl bg-white w-[220px] h-[330px] ml-4 mt-2 rounded-md">
+          <div class="w-[220px] bg-blue-200 h-[180px] rounded-t-md bg-[url(img/makanan9.jpg)] bg-cover bg-no-repeat pt-[165px]"><div class=" bg-pink-400 w-[40px] h-[40px]  ml-[170px] flex text-center justify-center items-center rounded-full"><i class="fi fi-rr-shopping-cart text-white"></i></div>
+          </div>
+          <div class="card-body pt-6 p-4">
+            <h1 class="text-semibold ">Sate Kerang </h1>
+            <div class="d-flex align-items-center justify-content-between text-md">
+              <h6 class="fw-semibold  mb-0 gap-3">
+                <span class="text-danger text-pink-800">Rp 18.500</span> <span class="text-sm text-gray-400"><del>Rp
+                    20.000</del></span>
+              </h6>
+            </div>
+            <div class="mt-2 text-sm bg-orange-100 w-[150px] rounded-md text-pink-700">
+              <i class="fi fi-rr-shopping-cart text-white"></i> Bonus cashback 5%</small>
+              <div class="d-flex mt-2">
+              </div>
+            </div>
+            <div class="flex gap-2 text-sm text-gray-500">
+              <i class="bi bi-star text-yellow-400"></i>
+              <p>4.8</p>
+              <div class="border"></div>
+              <p>950 Terjual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+<div class="pb-96"></div>
 
 
 
-<!-- Section2 -->
-  <section class="py-7 pl-64">
-    <div class="grid gap-4 px-5">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan5.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Ayam Cingcang Lada Hitam</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan6.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Sate Mang Nono</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan8.avif" alt="">
-            <p class="font-semibold text-xl py-3">Mie Bangladesh</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/makanan7.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Mie Kuetiaw Basah</p>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Section 3 -->
-<section class="py-7 pl-64">
-    <div class="w-full mt-10 p-5 md:mt-0">
-      <h1 class="text-pink-400 font-semibold text-3xl">Minuman</span></h1>
-    </div>
-    <div class="grid gap-4 px-5">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/minuman1.jpg" alt="Bihun Saus tiram">
-            <p class="font-semibold text-xl py-3">Cofee GodDay</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/minuman2.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Orange Juice</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/minuman3.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Ice Cream</p>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/minuman4.jpg" alt="">
-            <p class="font-semibold text-xl py-3">Ice DungDung</p>
-        </div>
-    </div>
-</div>
 
-<div class="pb-80"></div>
 
-</section>
 
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<!-- Test -->
+ <script>
+    const scrollContainer = document.getElementById("scrollContainer");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
+    scrollContainer.addEventListener("mousedown", (e) => {
+      isDown = true;
+      scrollContainer.classList.add("active");
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      const walk = (x - startX) * 1.5; // speed factor
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+  <script>
+  const scrolldiv = document.getElementById('scrolldiv');
+
+  scrolldiv.addEventListener('wheel', (evt) => {
+    const isScrollingHorizontally = Math.abs(evt.deltaX) > Math.abs(evt.deltaY);
+    
+    if (isScrollingHorizontally || evt.shiftKey) {
+      evt.preventDefault();
+      scrolldiv.scrollBy({
+        left: evt.deltaX * 100, // ⬅ Tambah kecepatan scroll horizontal
+        behavior: 'smooth'
+      });
+    }
+  }, { passive: false });
+</script>
 </body>
 </html>
