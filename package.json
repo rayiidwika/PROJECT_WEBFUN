@@ -1,21 +1,16 @@
 {
-  "name": "tailwindcss-aos",
-  "version": "1.0.0",
-  "main": "index.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.12",
-    "aos": "^3.0.0-beta.6",
-    "tailwindcss": "^4.0.12"
   }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e394c7e7f6addcc2aa26b925076ed75202f6cd8b
