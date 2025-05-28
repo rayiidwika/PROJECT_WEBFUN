@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konfirmasi Pesanan | BreakFood</title>
+  <link href="/src/output.css" rel="stylesheet" />
+  <style>
+    .logo-animate {
+      animation: bounce 1s infinite alternate;
+    }
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-white font-sans min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white shadow-2xl rounded-2xl max-w-xl w-full p-6 md:p-10">
+    
+    <!-- Logo Animasi -->
+    <div class="flex justify-center mb-6">
+      <img src="" alt="BreakFood" class="w-20 h-20 logo-animate">
+    </div>
+
+    <h1 class="text-2xl md:text-3xl font-bold text-pink-500 text-center mb-3">Pesanan Berhasil Dibuat</h1>
+    <p class="text-gray-700 text-center mb-6">Terima kasih telah memesan di <strong>BreakFood</strong>. Berikut detail pesanan Anda:</p>
+
+    <div class="space-y-4 text-sm md:text-base">
+      <div>
+        <h2 class="font-semibold text-gray-800">👤 Nama Pemesan</h2>
+        <p id="nama" class="text-gray-600"></p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-gray-800">📍 Alamat Pengiriman</h2>
+        <p id="alamat" class="text-gray-600 whitespace-pre-line"></p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-gray-800">💳 Metode Pembayaran</h2>
+        <p id="metode" class="text-gray-600"></p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-gray-800">⏰ Waktu Pemesanan</h2>
+        <p id="waktu" class="text-gray-600"></p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-gray-800">🛒 Rincian Pesanan</h2>
+        <ul id="items" class="space-y-2 list-disc pl-5 text-gray-700"></ul>
+      </div>
+    </div>
+
+    <div class="mt-6 text-right text-lg md:text-xl font-bold text-pink-500">
+      Total: Rp. <span id="total"></span>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="index.html" class="inline-block bg-pink-500 hover:bg-pink-600 transition px-6 py-2 rounded-full text-white shadow-md">
+        Kembali ke Beranda
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("dataPesanan"));
+    if (!data) {
+      alert("Data pesanan tidak ditemukan.");
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("nama").innerText = data.namaPemesan;
+      document.getElementById("alamat").innerText = data.alamat;
+      document.getElementById("metode").innerText = data.metodePembayaran;
+      document.getElementById("total").innerText = data.total;
+      document.getElementById("waktu").innerText = data.waktu;
+
+      const ul = document.getElementById("items");
+      data.items.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = `${item.nama} x${item.jumlah} - Rp. ${parseInt(item.harga).toLocaleString('id-ID')}`;
+        ul.appendChild(li);
+      });
+
+      localStorage.removeItem("dataPesanan");
+    }
+  </script>
+</body>
+</html>

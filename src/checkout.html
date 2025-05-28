@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | BreakFood</title>
+  <link href="/src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <div class="w-full min-h-screen bg-white shadow-md overflow-hidden">
+    <div class="bg-pink-400 px-6 py-4 text-white text-xl font-semibold">
+      BreakFood
+    </div>
+    <div class="flex flex-col md:flex-row gap-6 p-4 md:p-6">
+
+      <!-- Left Section -->
+      <div class="flex-1">
+        <h2 class="text-xl font-bold mb-4">Pesanan saya</h2>
+        <div class="grid grid-cols-3 text-gray-500 font-semibold mb-2">
+          <div>Produk</div>
+          <div class="text-center">Jumlah</div>
+          <div class="text-right">Harga</div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="flex items-center justify-between border rounded-lg p-3 mb-3 item" data-price="15000">
+          <div class="flex items-center gap-4 w-1/3">
+            <img src="/src/img/img1.png" alt="Mie" class=" w-14 h-14 object-cover" />
+            <div>
+              <p class="text-gray-400">Makanan</p>
+              <p class="font-semibold">Mie Bangladesh</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center w-1/3 gap-2">
+            <button class="kurang px-2 bg-gray-200 rounded">-</button>
+            <span class="jumlah">1</span>
+            <button class="tambah px-2 bg-gray-200 rounded">+</button>
+          </div>
+          <div class="flex items-center justify-end w-1/3 gap-2">
+            <span class="text-right">Rp. 15.000</span>
+            <button class="text-red-500 hapus">✕</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-between border rounded-lg p-3 mb-3 item" data-price="20000">
+          <div class="flex items-center gap-4 w-1/3">
+            <img src="/src/img/img3.png" alt="Strawberry Milk" class="w-14 h-14 object-cover" />
+            <div>
+              <p class="text-gray-400">Minuman</p>
+              <p class="font-semibold">Strawberry Milk</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center w-1/3 gap-2">
+            <button class="kurang px-2 bg-gray-200 rounded">-</button>
+            <span class="jumlah">1</span>
+            <button class="tambah px-2 bg-gray-200 rounded">+</button>
+          </div>
+          <div class="flex items-center justify-end w-1/3 gap-2">
+            <span class="text-right">Rp. 20.000</span>
+            <button class="text-red-500 hapus">✕</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-center justify-between border rounded-lg p-3 mb-3 item" data-price="25000">
+          <div class="flex items-center gap-4 w-1/3">
+            <img src="/src/img/img2.png" alt="Ayam Teriyaki" class=" w-14 h-14 object-cover" />
+            <div>
+              <p class="text-gray-400">Makanan</p>
+              <p class="font-semibold">Ayam Teriyaki</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center w-1/3 gap-2">
+            <button class="kurang px-2 bg-gray-200 rounded">-</button>
+            <span class="jumlah">1</span>
+            <button class="tambah px-2 bg-gray-200 rounded">+</button>
+          </div>
+          <div class="flex items-center justify-end w-1/3 gap-2">
+            <span class="text-right">Rp. 25.000</span>
+            <button class="text-red-500 hapus">✕</button>
+          </div>
+        </div>
+
+        <div class="text-right font-semibold mt-6">
+          Total: Rp. <span id="total-harga">60.000</span>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="mt-32">
+          <button class="inline-flex gap-2 text-rose-500 hover:text-rose-600 font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Kembali Berbelanja
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="md:w-1/3 p-6">
+        <h3 class="text-lg font-bold mb-4">Info Pembayaran</h3>
+
+        <!-- Input Data Pemesan -->
+        <div class="mb-6">
+          <div class="mb-4">
+            <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Pemesan</label>
+            <input type="text" id="nama" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+          </div>
+          <div>
+            <label for="alamat" class="block text-sm font-medium text-gray-700 mb-1">Alamat Pengiriman</label>
+            <textarea id="alamat" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400" rows="3" required></textarea>
+          </div>
+        </div>
+
+        <!-- Metode Pembayaran -->
+        <div class="border"></div>
+        <p class="mt-4">Metode Pembayaran:</p>
+        <div class="flex gap-4 mt-6 mb-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="metode" class="accent-blue-500" checked required />
+            <img src="/src/img/img4.png" class="w-12 h-7">
+            <span>Dana</span>
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="metode" class="accent-blue-500" required />
+            <img src="/src/img/img5.png" class="w-12 h-7">
+            <span>Gopay</span>
+          </label>
+        </div>
+        <div class="border mb-6"></div>
+        <div>
+          <button class="w-full bg-pink-400 hover:bg-pink-500 text-white py-2 rounded-lg">
+            Buat Pesanan
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Jumlah/Pengurangan Item -->
+  <script>
+    function formatRupiah(angka) {
+      return angka.toLocaleString('id-ID');
+    }
+
+    function hitungTotal() {
+      let total = 0;
+      document.querySelectorAll('.item').forEach(item => {
+        const price = parseInt(item.getAttribute('data-price'));
+        const jumlah = parseInt(item.querySelector('.jumlah').innerText);
+        total += price * jumlah;
+      });
+      document.getElementById('total-harga').innerText = formatRupiah(total);
+    }
+
+    document.querySelectorAll('.item').forEach(item => {
+      const btnTambah = item.querySelector('.tambah');
+      const btnKurang = item.querySelector('.kurang');
+      const jumlahSpan = item.querySelector('.jumlah');
+
+      btnTambah.addEventListener('click', () => {
+        let jumlah = parseInt(jumlahSpan.innerText);
+        jumlahSpan.innerText = jumlah + 1;
+        hitungTotal();
+      });
+
+      btnKurang.addEventListener('click', () => {
+        let jumlah = parseInt(jumlahSpan.innerText);
+        if (jumlah > 1) {
+          jumlahSpan.innerText = jumlah - 1;
+          hitungTotal();
+        }
+      });
+
+      const btnHapus = item.querySelector('.hapus');
+      btnHapus.addEventListener('click', () => {
+        item.remove();
+        hitungTotal();
+      });
+    });
+
+    hitungTotal();
+    
+    // JavaScript untuk input nama dan alamat
+    document.querySelector("button.w-full").addEventListener("click", function () {
+      const namaInput = document.getElementById("nama").value.trim();
+      const alamatInput = document.getElementById("alamat").value.trim();
+
+      if (!namaInput || !alamatInput) {
+        alert("Mohon isi nama dan alamat pengiriman terlebih dahulu.");
+        return;
+      }
+
+      const items = [];
+      document.querySelectorAll('.item').forEach(item => {
+        const nama = item.querySelector('.font-semibold').innerText;
+        const jumlah = item.querySelector('.jumlah').innerText;
+        const harga = item.getAttribute('data-price');
+        items.push({ nama, jumlah, harga });
+      });
+
+      const totalHarga = document.getElementById('total-harga').innerText;
+      const metode = document.querySelector('input[name="metode"]:checked').nextElementSibling.nextElementSibling.innerText;
+
+      const dataPesanan = {
+        namaPemesan: namaInput,
+        alamat: alamatInput,
+        metodePembayaran: metode,
+        total: totalHarga,
+        waktu: new Date().toLocaleString("id-ID"),
+        items
+      };
+
+      localStorage.setItem("dataPesanan", JSON.stringify(dataPesanan));
+      window.location.href = "konfirmasi.html";
+    });
+  </script>
+</body>
+
+</html>
