@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesanan</title>
+    <title>Pesanan | BreakFood</title>
     <link rel="stylesheet" href="output.css">
     <!-- Flaticon -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css" />
@@ -59,7 +59,7 @@
                <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 18 18">
                   <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
                </svg>
-               <span class="flex-1 ms-3 whitespace-nowrap">Pesanan</span>
+               <span class="flex-1 ms-3 whitespace-nowrap">Coustomer Service</span>
             </a>
          </li>
          <li>
@@ -91,20 +91,191 @@
    </div>
 </aside>
     <!-- Navbar -->
-    <header class="fixed w-full flex justify-between bg-white text-black px-10 py-5 shadow-2xl z-40">
+    <header class="fixed w-full flex justify-between bg-white text-black px-10 py-5 shadow-2xl z-50">
       <!-- Kiri -->
       <div class="font-bold">
         <h1 class="text-pink-400 text-lg">BreakFood</h1>
       </div>
       <!-- Kanan -->
-      <div class="md:flex gap-7 hidden">
-        <p class="text-black text-xl"><i class="fi fi-rs-store-buyer"></i></p>
-        <a href="" class="font-semibold">Masuk</a>
-        <a href="" class="font-semibold">Daftar</a>
+      <div class="flex gap-10 ">
+        <a href="" class="text-black text-xl"><i class="fi fi-rs-store-buyer"></i></a>
+        <a href="" class="text-black text-xl  "><i class="fi fi-rs-user"></i></a>
+        <a href="" class="text-xl"><i class="fi fi-rr-settings"></i></a>
       </div>
     </header>
+    <!-- Content Bg Scrol -->
+ <div class="pl-72 pr-7">
+<div id="default-carousel" class="relative w-full py-6" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-64 overflow-hidden rounded-lg mx-1 ">
+      <div class="pl-64 pt-24 ml-5 mr-5"> 
+         <div class="pl-36 pt-0">
+         <div class="text-4xl font-bold text-gray-200 absolute z-40 ">
+                  Help Center
+         </div>
+         <p class="text-white font-semibold text-lg absolute z-40 pt-5"><br>Pusat Layanan & Bantuan</p>
+         
+         </div>
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/bgmenu.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/makanan7.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/makanan6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/makanan4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/makanan3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 6 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="img/makanan1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
     
+      </div>
+</div>
+</div>
 
+</div>
+<div class="w-full max-w-md pl-96 py-5">
+    <form action="/search" method="GET" class="relative">
+      <input
+        type="text"
+        name="query"
+        placeholder="Cari sesuatu..."
+        class="w-[900px] pl-10 pr-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      />
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <!-- Icon pencarian (gunakan Heroicons atau SVG langsung) -->
+        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 6.65a7.5 7.5 0 010 10.6z"></path>
+        </svg>
+      </div>
+    </form>
+  </div>
+
+<!-- Content Cs -->
+<div class="flex flex-col-3 pl-72 gap-10 pt-12">
+   <!-- Item 1 -->
+   <div class="border-[1px] w-72 h-24 shadow-2xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ORDERS</h3>
+         <P class="text-sm text-center">Tracking Pakages history and more</P>
+         </div>
+      </div>
+   </div>
+   <!-- Item 2 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7 pl-5">
+             <img src="img/akun.png" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ACCOUNT</h3>
+         <P class="text-sm text-center">Manage Your Account</P>
+         </div>
+      </div>
+   </div>
+   <!-- item3 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">GIFT CARD & PAYMENT</h3>
+         <P class="text-sm text-center">Adding Cards, Chaking Blance and More</P>
+         </div>
+      </div>
+   </div>
+   <!-- item 4 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ORDERS</h3>
+         <P class="text-sm text-center">Gift Card, Caking Blances and More</P>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Content 2 -->
+<div class="flex flex-col-3 pl-72 gap-10 pt-12">
+   <!-- Item 1 -->
+   <div class="border-[1px] w-72 h-24 shadow-2xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ORDERS</h3>
+         <P class="text-sm text-center">Tracking Pakages history and more</P>
+         </div>
+      </div>
+   </div>
+   <!-- Item 2 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7 pl-5">
+             <img src="img/akun.png" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ACCOUNT</h3>
+         <P class="text-sm text-center">Manage Your Account</P>
+         </div>
+      </div>
+   </div>
+   <!-- item3 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ORDERS</h3>
+         <P class="text-sm text-center">Gift Card, Caking Blances and More</P>
+         </div>
+      </div>
+   </div>
+   <!-- item 4 -->
+   <div class="border-[1px] w-72 h-24 shadow-xl bg-gray-50 rounded-lg">
+      <div class="flex">
+         <div class="pt-7">
+            <img src="img/kado.jpg" class="w-14">
+         </div>
+         <div class="block pt-1">
+         <h3 class="text-sm pl-2 pt-2.5 font-semibold">ORDERS</h3>
+         <P class="text-sm text-center">Gift Card, Caking Blances and More</P>
+         </div>
+      </div>
+   </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
