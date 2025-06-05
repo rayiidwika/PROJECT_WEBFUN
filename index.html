@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="end" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,9 +24,9 @@
       <div class="md:flex gap-5 hidden font-bold">
         <a href="#" class="hover:underline">Home</a>
         <a href="#tentangKami" class="hover:underline">Tentang Kami</a>
-        <a href="" class="hover:underline">Hubungi Kami</a>
+        <a href="#hubungiKami" class="hover:underline">Hubungi Kami</a>
         <a
-          href="login.html"
+          href="/src/login.html"
           class="hover:underline hover:text-blue-500 text-blue-700"
           >Sign In</a
         >
@@ -49,7 +49,7 @@
         </div>
         <!-- eror -->
         <div class="flex mt-9 gap-2">
-          <a href="dashboard.html">
+          <a href="/src/dashboard.html">
             <button
               class="mt-5 bg-pink-600 text-white font-semibold px-7 py-4 rounded-full hover:bg-pink-700 cursor-pointer"
             >
@@ -57,7 +57,7 @@
             </button>
           </a>
 
-          <a href="login.html">
+          <a href="/src/login.html">
             <button
               class="mt-5 bg-pink-100 font-semibold px-7 py-4 rounded-full hover:bg-pink-200 cursor-pointer"
             >
@@ -83,7 +83,7 @@
     <section id="contoh 1">
       <div class="flex justify-between mt-10">
         <div class="text-xl mx-15 ml-35 flex w-full">Gambaran utama</div>
-        <div class="text-[32px] mr-36 w-full font-semibold">
+        <div class="text-[32px] mr-33 w-full font-semibold">
           <h1>
             <p class=" ">Setiap hari jutaan pengguna</p>
             <p class="mt-[-10px]">GrabFood mencari dan memesan</p>
@@ -114,7 +114,7 @@
             </div>
           </div>
         </div>
-        <div class="text-lg mr-18">
+        <div class="text-lg mr-8">
           <p>
             Mau makan di luar atau menggunakan pesan-antar, bahkan ambil <br />
             sendiri untuk menghemat waktu? GrabFood membuat semuanya <br />
@@ -133,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="text-lg mr-17">
+        <div class="text-lg mr-8">
           <p>
             Makan bareng keluarga atau teman-teman dengan selera yang
             <br />berbeda? GrabFood memiliki jutaan pilihan, mulai dari jajanan
@@ -153,7 +153,7 @@
             </div>
           </div>
         </div>
-        <div class="text-lg mr-17">
+        <div class="text-lg mr-6">
           <p>
             Layanan Pengantaran Hemat, GrabUnlimited, dan Dine Out Deals <br />
             adalah cara kami memanjakan Anda supaya selalu bisa merasakan <br />
@@ -187,7 +187,7 @@
               </p>
               <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
             </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
+            <img src="/src/img/th.jpg" alt="" class="ml-40 mt-[-48px] h-80 w-140" />
           </div>
         </div>
       </div>
@@ -199,13 +199,16 @@
           <p class="font-bold">Pengiriman Terjadwal</p>
           <div class="flex">
             <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
+              <p>Sudah tahu mau makan apa besok? Pesan untuk</p>
               <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
+               pengiriman di waktu berikutnya, atau hingga 2 hari
               </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
+              <p class="mt-[-3px]">
+                sebelumnya. Beli makanan online jadi lebih prakits</p>
+              <p class="mt-[-3px]">
+                dan mudah.</p>
             </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
+            <img src="/src/img/date.jpg" alt="" class="ml-45 mt-[-48px] h-80 w-139" />
           </div>
         </div>
       </div>
@@ -217,13 +220,13 @@
           <p class="font-bold">Ambil sendiri</p>
           <div class="flex">
             <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
+              <p>Gunakan fitur Ambil Sendiri untuk menghemat biaya</p>
               <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
+                pengantaran. Anda bisa langsung Ambil Sendiri
               </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
+              <p class="mt-[-3px]">pesanan ketika sudah siap.</p>
             </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
+            <img src="/src/img/AMBIL.jpg" alt="" class="ml-41 mt-[-48px] h-80 w-140" />
           </div>
         </div>
       </div>
@@ -235,13 +238,15 @@
           <p class="font-bold">Dine Out Deals</p>
           <div class="flex">
             <div class="text-[21px] mt-4">
-              <p>Di mana pun Anda berada, pesan makanan dan kami</p>
+              <p>Nikmati berbagai diskon menarik untuk makan di</p>
               <p class="mt-[-3px]">
-                kirimkan ke lokasi Anda. Pesan dari penjual makanan
+                resto dengan membeli voucher Dine Out Deals di
               </p>
-              <p class="mt-[-3px]">terdekat atau dari restoran favoritmu.</p>
+              <p class="mt-[-3px]">GrabFood. Anda bisa menggunakan voucher</p>
+              <p class="mt-[-3px]">tersebut kapan saja. Dapatkan jaminan 100% uang</p>
+              <p class="mt-[-3px]">kembali!</p>
             </div>
-            <img src="img/th.jpg" alt="" class="ml-48 mt-[-48px] h-80 w-140" />
+            <img src="/src/img/diskon.jpg" alt="" class="ml-45 mt-[-48px] h-80 w-140" />
           </div>
         </div>
       </div>
@@ -307,6 +312,53 @@
       <div class="ml-35 mt-8 text-xl"></div>
     </section>
     <!-- section 6 end -->
+
+    <!-- hubungi kami -->
+<section class="text-gray-600 body-font relative ml-30 mr-30" id="hubungiKami">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap ">
+        <div
+            class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                marginwidth="0" scrolling="no"
+                src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+            <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                <div class="lg:w-1/2 px-6">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                    <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                </div>
+                <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                    <a class="text-red-500 leading-relaxed">Breakfood@gmail.com</a>
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                    <p class="leading-relaxed">123-456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <h2 class="text-gray-900 text-lg mb-1 title-font font-semibold">Hubungi Kami</h2>
+            <p class="leading-relaxed mb-5 text-gray-600">Hubungi kami bila terjadi sesuatu atau terjadi hal yang membuat anda tidak nyaman.
+            </p>
+            <div class="relative mb-4">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+            <p class="text-xs text-gray-500 mt-3">Hubungi kami bila ada terjadi bug/ hal lain yang membuat anda tidak nyaman.
+              </p>
+        </div>
+    </div>
+</section>
+    <!-- hubguni kami end -->
+     
 
     <!-- footer -->
     <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
